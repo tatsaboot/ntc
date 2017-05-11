@@ -1,0 +1,118 @@
+@media screen and (max-width: 1024px){
+    #fh5co-header .navbar-brand{
+        right: 0;
+    }
+    .navbar-brand img {
+        height: 40px !important;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1110px){
+    .tell{
+        font-size: 30px;
+    }
+    .call-center{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 995px){
+    #section-5{
+        height: auto;
+    }
+    .txt-where{
+        font-size: 40px;
+        padding-top: 150px;
+        text-align: center;
+    }
+    .sec5-map{
+        width: 100%;
+    }
+    .sec5-contact{
+        width: 100%;
+    }
+    .contact-block{
+        margin: 50px 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .form-horizontal{
+        text-align: left;
+        padding:0 50px;
+    }
+    .set-right-contact{
+        float: none;
+    }
+    .btn-send{
+        float: right;
+    }
+    .footer-left, .footer-center, .footer-right{
+        width: 100% !important;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 700px){
+    #section-1, #section-2, #section-3, #section-4, #section-5{
+        min-width: 100% !important;
+    }
+    #section-2{
+        height: 700px;
+    }
+    #section-3{
+        padding: 50px 0;
+        height: auto;
+    }
+    #section-5{
+        height: auto;
+    }
+    .ntc-intro{
+        font-size: 14px;
+    }
+    .diamond-block{
+        display: none;
+    }
+    .diamond-res{
+        display: block;
+    }
+    .container-news{
+        display: none;
+        width: 100%;
+    }
+    .news-bg{
+        margin-bottom:0;
+    }
+    .res-news{
+        display: block;
+        width: 100%;
+    }
+    .news-res-block{
+        border-bottom: solid #CCC 1px;
+    }
+    .photo-res{
+        width: 35%;
+        float:left;
+        margin-right: 3%;
+    }
+    .info-res{
+        width: 60%;
+        float:left;
+    }
+    .dis-res{
+        display: none;
+    }
+    .tell{
+        font-size: 20px;
+    }
+    .call-center{
+        font-size: 16px;
+    }
+    .txt-where{
+        font-size: 20px;
+        padding-top: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .map-where{
+        width: 100%;
+    }
+}

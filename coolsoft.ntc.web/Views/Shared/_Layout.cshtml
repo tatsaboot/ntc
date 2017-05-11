@@ -1,0 +1,264 @@
+﻿@using coolsoft.ntc.web.Resources.Views.Shared
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>@ViewBag.Title - @_Layout.TitleWording</title>
+    
+    <!-- Bootstrap -->
+    @Styles.Render("~/assets/css")
+    @Styles.Render("~/assets/fonts")
+    
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/sidebar.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/animate.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/style.css")" />
+    @RenderSection("styles", required: false)
+
+    <!--link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet"-->
+    @Scripts.Render("~/assets/js/modernizr")
+</head>
+<body>
+    <div id="wrapper" class="toggled">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right side-menu">
+                    <li><a class="side-toggle" href="#" data-nav-section="home"><span>Home</span></a></li>
+                    <li><a class="side-toggle" href="#" data-nav-section="services"><span>Services</span></a></li>
+                    <li style="padding-left: 10px;"><a href="#" onclick="javascript:location.href='https://www.google.com/'"><img src="@Url.Content("~/Content/images/icon-1.png")">B2B : Business-to-Business</a></a></li>
+                    <li style="padding-left: 10px;"><a href="#" onclick="javascript:location.href='https://www.google.com/'"><img src="@Url.Content("~/Content/images/icon-2.png")">B2C : Business-to-Consumer</a></a></li>
+                    <li style="padding-left: 10px;"><a href="#" onclick="javascript:location.href='https://www.google.com/'"><img src="@Url.Content("~/Content/images/icon-3.png")">C2C : Consumer-to-Consumer</a></a></li>
+                    <li style="padding-left: 10px;"><a href="#" onclick="javascript:location.href='https://www.google.com/'"><img src="@Url.Content("~/Content/images/icon-4.png")">Bangkok Sameday</a></a></li>
+                    <li style="padding-left: 10px;"><a href="#" onclick="javascript:location.href='https://www.google.com/'"><img src="@Url.Content("~/Content/images/icon-5.png")">Value-Added Services</a></a></li>
+                    <li><a class="side-toggle" href="#" data-nav-section="customer"><span>Customers</span></a></li>
+                    <li><a class="side-toggle" href="#" data-nav-section="e-commerce"><span>E-Commerce</span></a></li>
+                    <li><a class="side-toggle" href="#" data-nav-section="contact"><span>Contact</span></a></li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav navbar-right side-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Language <span class="caret"></span></a>
+                    <ul class="dropdown-menu side-lang" role="menu">
+                        <li><a href="https://www.facebook.com/">EN</a></li>
+                        <li><a href="#">TH</a></li>
+                        <li><a href="#">CN</a></li>
+                        <li><a href="#">LAO</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right side-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Login <span class="caret"></span></a>
+                    <ul class="dropdown-menu side-lang" role="menu">
+                        <li><a href="https://www.facebook.com/">Profile</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <div id="page-content-wrapper">
+            <!-- Fixed navbar -->
+            <header role="banner" id="fh5co-header">
+                <div class="container-header">
+                    <div class="navbar-header">
+                        <a id="menu-toggle" href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="@Url.Content("~/Content/images/logo_ori-01.png")" class="logo-border">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                        <span></span><img class="flag-lang" c src="@Url.Content("~/Content/images/en.png")"/><span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-cart" role="menu">
+                                        <li>
+                                            <a class="language-item" href="#">
+                                                <span></span><img class="flag-lang" c src="@Url.Content("~/Content/images/en.png")"/>&nbsp;&nbsp;EN
+                                            </a>
+                                        </li>
+                                        <li class="last-item">
+                                            <a class="language-item" href="#">
+                                                <span></span><img class="flag-lang" c src="@Url.Content("~/Content/images/th.png")"/>&nbsp;&nbsp;TH
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <img src="@Url.Content("~/Content/images/login.png")" class="login-img">
+                                    <ul class="dropdown-menu dropdown-cart" role="menu">
+                                        <li>
+                                            <a class="language-item" href="#">
+                                                Register
+                                            </a>
+                                        </li>
+                                        <li class="last-item">
+                                            <a class="language-item" href="#">
+                                                login
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Logined
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                        ชื่อผู้ใช้ Test account
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-cart" role="menu">
+                                        <li>
+                                            <a class="language-item" href="#">
+                                                Profile
+                                            </a>
+                                        </li>
+                                        <li class="last-item">
+                                            <a class="language-item" href="#">
+                                                Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+                                -->
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right h-menu">
+                                <li class="active"><a href="#"><span>Home</span></a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <span>Services</span>
+                                    </a>
+                                    <ul class="dropdown-menu h-dropdown dropdown-cart">
+                                        <li><a href="#"><img src="@Url.Content("~/Content/images/icon-1.png")"/>B2B : Business-to-Business</a></a></li>
+                                        <li><a href="#"><img src="@Url.Content("~/Content/images/icon-2.png")"/>B2C : Business-to-Consumer</a></a></li>
+                                        <li><a href="#"><img src="@Url.Content("~/Content/images/icon-3.png")"/>C2C : Consumer-to-Consumer</a></a></li>
+                                        <li><a href="#"><img src="@Url.Content("~/Content/images/icon-4.png")"/>Bangkok Sameday</a></a></li>
+                                        <li class="last-item"><a href="#"><img src="@Url.Content("~/Content/images/icon-5.png")"/>Value-Added Services</a></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><span>Customers</span></a></li>
+                                <li><a href="#"><span>E-Commerce</span></a></li>
+                                <li><a href="#"><span>Tracking</span></a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <span>Contact</span>
+                                    </a>
+                                    <ul class="dropdown-menu h-dropdown">
+                                        <li class="last-item"><a href="#"><img src="@Url.Content("~/Content/images/career.png")"/>Career</a></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            @RenderBody()
+
+            <footer id="footer" role="contentinfo" class="footer-distributed">
+                <a href="#" class="gotop js-gotop"><i class="icon-arrow-up2" style="color:#FFF;"></i></a>
+                <div class="footer-left">
+
+                    <h2>NTC<small style="color:#0e1007;">&nbsp;&nbsp;Overnight Express</small></h2>
+
+                    <p class="footer-links" style="color: #0e1007; padding: 20px 0 0 50px;">
+                        ·
+                        <a href="#">Home</a><br>
+                        ·
+                        <a href="#">Services</a><br>
+                        ·
+                        <a href="#">Customers</a><br>
+                        ·
+                        <a href="#">E-Commerce</a><br>
+                        ·
+                        <a href="#">Tracking</a><br>
+                        ·
+                        <a href="#">Contact</a>
+                    </p>
+                </div>
+
+                <div class="footer-center">
+
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p>
+                            29,31,33 Phahonyothin Road<br>
+                            Sanambin Sub-district, Don Mueang District<br>
+                            Bangkok 10210
+                        </p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>02-5237042-46</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@company.com" style="color:#FFF;">Ntc_Overnight@hotmail.com</a></p>
+                    </div>
+
+                </div>
+
+                <div class="footer-right">
+
+                    <p class="footer-company-about" style="color:#0e1007;">
+                        <span style="color: #FFF;">About the company</span>
+                        NTC Overnight Express established in 1995  October 10th with the inspiration of company’s director who used to work for Railway department which is responsible as a delivery .During working for railway department our director also have an idea about changing the service system to satisfy our customer.
+                    </p>
+
+                    <div class="footer-icons">
+
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+
+                    </div>
+
+                </div>
+
+                <p class="footer-company-name text-center" style="color:#5d8108;margin-top: 20px;">© Copyright 2015 All Rights Reserved | ntc.co.th</p>
+            </footer>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    @*<script src="assets/js/jquery.min.js"></script>*@
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    @*<script src="assets/js/bootstrap.min.js"></script>*@
+
+    @Scripts.Render("~/assets/js")
+    
+    <script>
+
+    $('ul.nav li.dropdown').hover(function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+    }, function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+    });
+
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        $(".navbar-fixed-top").toggleClass("set-margin");
+    });
+    $(".side-toggle").click(function(e) {
+        $("#wrapper").toggleClass("toggled");
+        $(".navbar-fixed-top").toggleClass("set-margin");
+    });
+    </script>
+    <script src="@Url.Content("~/Content/js/jquery.waypoints.min.js")"></script>
+    <script src="@Url.Content("~/Content/js/jquery.stellar.min.js")"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

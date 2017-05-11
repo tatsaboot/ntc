@@ -1,0 +1,502 @@
+﻿@using coolsoft.ntc.web.Resources.Views.Home
+@{
+    ViewBag.Title = Index.TitlePage;
+}
+
+@section styles{
+        
+}
+
+<section id="section-1">
+    <!--<div class="Bgradient"></div>-->
+    <div class="container banner-container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active" style="background: url(@Url.Content("Content/images/full_image_2.jpg")) no-repeat center center;">
+                    <div class="text-wrap banner-txt">
+                        <div class="text-inner">
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2">
+                                    <h1 class="to-animate banner-h1">NTC</h1>
+                                    <h2 class="to-animate">Overnight Espress</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                                        <div class="item" style="background: url(./assets/images/full_image_3.jpg) no-repeat center center;">
+                                            <div class="text-wrap banner-txt">
+                                                <div class="text-inner">
+                                                    <div class="row">
+                                                        <div class="col-xs-8 col-xs-offset-2">
+                                                            <h1 class="to-animate banner-h1">NTC</h1>
+                                                            <h2 class="to-animate">Overnight Espress</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item" style="background: url(./assets/images/full_image_5.jpg) no-repeat center center;">
+                                            <div class="text-wrap banner-txt">
+                                                <div class="text-inner">
+                                                    <div class="row">
+                                                        <div class="col-xs-8 col-xs-offset-2">
+                                                            <h1 class="to-animate banner-h1">NTC</h1>
+                                                            <h2 class="to-animate">Overnight Espress</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!---->
+            </div>
+        </div>
+        <div class="row-track">
+            <div class="track-box">
+                <a class="track-btn" href="#"><img src="@Url.Content("~/Content/images/box1G.png")"/></a>
+                <input class="track-input" type="text" placeholder="Tracking Number">
+            </div>
+        </div>
+    </div>
+    <div class="slant"></div>
+</section>
+<section id="section-2">
+    <div class="text-ntc">NTC</div>
+    <div class="line-diamond"></div>
+    <div class="ntc-intro">@Index.Slogan</div>
+    <div class="diamond-block">
+        <img src="@Url.Content("~/Content/images/section-2BG.png")"/>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+    </div>
+    <div class="diamond-res row text-center">
+        <h2>B2B</h2>
+        <p>Business-to-Business</p>
+        <hr>
+        <h2>B2C</h2>
+        <p>Business-to-Consumer</p>
+        <hr>
+        <h2>C2C</h2>
+        <p>Consumer-to-Consumer</p>
+        <hr>
+        <h3>Bangkok Sameday</h3>
+        <hr>
+        <h3>Value-Added Services</h3>
+        <hr>
+    </div>
+</section>
+<section id="section-3">
+    <div class="row container-news">
+        <div class="row">
+            <div class="col-xs-12 news-bg">
+                <img src="@Url.Content("~/Content/images/news-bg.png")"/>
+                <div class="controls hidden-xs">
+                    <a class="left btn" href="#carousel-example" data-slide="prev"></a>
+                    <a class="right btn" href="#carousel-example" data-slide="next"></a>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <!-- Controls -->
+
+            </div>
+        </div>
+        <div id="carousel-example" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="@Url.Content("~/Content/images/news-1.jpg")" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-xs-12">
+                                            <h4>VISION</h4>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p>
+                                            NTC is the leader of domestic
+                                            transportation. You’ll get your
+                                            merchandise with the impression
+                                            of our service.
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                    <div class="btn btn-read">READ MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="@Url.Content("~/Content/images/news-2.jpg")" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-xs-12">
+                                            <h4>VISION</h4>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p>
+                                            NTC is the leader of domestic
+                                            transportation. You’ll get your
+                                            merchandise with the impression
+                                            of our service.
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                    <div class="btn btn-read">READ MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="@Url.Content("~/Content/images/news-3.jpg")" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-xs-12">
+                                            <h4>VISION</h4>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p>
+                                            NTC is the leader of domestic
+                                            transportation. You’ll get your
+                                            merchandise with the impression
+                                            of our service.
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                    <div class="btn btn-read">READ MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="@Url.Content("~/Content/images/news-4.jpg")" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-xs-12">
+                                            <h4>VISION</h4>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p>
+                                            NTC is the leader of domestic
+                                            transportation. You’ll get your
+                                            merchandise with the impression
+                                            of our service.
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                    <div class="btn btn-read">READ MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="@Url.Content("~/Content/images/news-1.jpg")" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-xs-12">
+                                            <h4>VISION</h4>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p>
+                                            NTC is the leader of domestic
+                                            transportation. You’ll get your
+                                            merchandise with the impression
+                                            of our service.
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                    <div class="btn btn-read">READ MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="@Url.Content("~/Content/images/news-2.jpg")" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-xs-12">
+                                            <h4>VISION</h4>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p>
+                                            NTC is the leader of domestic
+                                            transportation. You’ll get your
+                                            merchandise with the impression
+                                            of our service.
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                    <div class="btn btn-read">READ MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="@Url.Content("~/Content/images/news-3.jpg")" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-xs-12">
+                                            <h4>VISION</h4>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p>
+                                            NTC is the leader of domestic
+                                            transportation. You’ll get your
+                                            merchandise with the impression
+                                            of our service.
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                    <div class="btn btn-read">READ MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="@Url.Content("~/Content/images/news-4.jpg")" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-xs-12">
+                                            <h4>VISION</h4>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p>
+                                            NTC is the leader of domestic
+                                            transportation. You’ll get your
+                                            merchandise with the impression
+                                            of our service.
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                    <div class="btn btn-read">READ MORE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row res-news">
+        <div class="row">
+            <div class="col-xs-12 news-bg">
+                <img src="@Url.Content("~/Content/images/news-bg-res.png")"/>
+            </div>
+        </div>
+        <ul>
+            <li class="news-res-block row">
+                <div class="photo-res">
+                    <img src="@Url.Content("~/Content/images/news-1.jpg")" class="img-responsive" alt="a" />
+                </div>
+                <div class="info-res">
+                    <div class="row">
+                        <div class="price col-xs-12">
+                            <h5>VISION</h5>
+                        </div>
+                    </div>
+                    <div class="separator clear-left">
+                        <p style="font-size: 12px;">
+                            NTC is the leader of domestic
+                            transportation. You’ll get your
+                            merchandise with the impression
+                            of our service.
+                        </p>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </li>
+            <li class="news-res-block row">
+                <div class="photo-res">
+                    <img src="@Url.Content("~/Content/images/news-2.jpg")" class="img-responsive" alt="a" />
+                </div>
+                <div class="info-res">
+                    <div class="row">
+                        <div class="price col-xs-12">
+                            <h5>VISION</h5>
+                        </div>
+                    </div>
+                    <div class="separator clear-left">
+                        <p style="font-size: 12px;">
+                            NTC is the leader of domestic
+                            transportation. You’ll get your
+                            merchandise with the impression
+                            of our service.
+                        </p>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </li>
+            <li class="news-res-block row">
+                <div class="photo-res">
+                    <img src="@Url.Content("~/Content/images/news-3.jpg")" class="img-responsive" alt="a" />
+                </div>
+                <div class="info-res">
+                    <div class="row">
+                        <div class="price col-xs-12">
+                            <h5>VISION</h5>
+                        </div>
+                    </div>
+                    <div class="separator clear-left">
+                        <p style="font-size: 12px;">
+                            NTC is the leader of domestic
+                            transportation. You’ll get your
+                            merchandise with the impression
+                            of our service.
+                        </p>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </li>
+            <li class="news-res-block row">
+                <div class="photo-res">
+                    <img src="@Url.Content("~/Content/images/news-4.jpg")" class="img-responsive" alt="a" />
+                </div>
+                <div class="info-res">
+                    <div class="row">
+                        <div class="price col-xs-12">
+                            <h5>VISION</h5>
+                        </div>
+                    </div>
+                    <div class="separator clear-left">
+                        <p style="font-size: 12px;">
+                            NTC is the leader of domestic
+                            transportation. You’ll get your
+                            merchandise with the impression
+                            of our service.
+                        </p>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </li>
+            <li class="row text-center"><div class="btn btn-read">SEE ALL...</div></li>
+        </ul>
+    </div>
+</section>
+<section id="section-4">
+    <div class="row">
+        <div class="col-xs-6 dis-res"></div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <p class="tell">+ 66 (0) 2523 7042-46</p>
+            <p class="tell2">+ 66 (0) 2611 8454-55 , 0 2611 9582,84</p>
+            <div class="col-xs-8 call-center">
+                <p>NTC Call Center<br>Mon - Sat 08.30 - 18.00</p>
+                <div class="col-xs-12 line-call1"></div>
+                <div class="col-xs-12 line-call2"></div>
+                <p>
+                    Website  : http://ntc.co.th<br>
+                    FB: ntc overnight express<br>
+                    Line@@ : ntc overnight express<br>
+                    In : ntc overnight express
+                </p>
+            </div>
+            <div class="col-xs-4">
+                <img src="@Url.Content("~/Content/images/headset.png")" class="head-set-img">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="section-5">
+    <div class="row">
+        <div class="sec5-map line-left pull-right">
+            <div class="map-where pull-right">
+                <img src="@Url.Content("~/Content/images/map.png")"/>
+            </div>
+            <div class="txt-where pull-left">
+                <p>Where we are</p>
+                <div class="btn btn-find">Find Us.</div>
+            </div>
+        </div>
+        <div class="sec5-contact contact-block line-right pull-left">
+            <h2>Contact</h2>
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-lg-3 control-label set-left-contact">Name</label>
+                    <div class="col-lg-6 set-right-contact">
+                        <input class="form-control" value="" type="text">
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label set-left-contact">Email</label>
+                    <div class="col-lg-6 set-right-contact">
+                        <input class="form-control" value="" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label set-left-contact">Phone</label>
+                    <div class="col-lg-6 set-right-contact">
+                        <input class="form-control" value="" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label set-left-contact">Message</label>
+                    <div class="col-lg-6 set-right-contact">
+                        <textarea class="form-control" value="" type="text" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="btn btn-find btn-send">Send.</div>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+
+@section scripts{
+    <script src="@Url.Content("~/Content/js/main.js")"></script>
+}
